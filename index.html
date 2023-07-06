@@ -5,35 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator App</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+   
 </head>
 <body>
     <div class="container">
         <h1>Age Calculator</h1>
         <br><br>
-        <form id="ageForm">
+        <form >
+          <div id="ageForm">
           <div class="form-group">
             <label for="day">DAY</label><br>
             <input type="number" id="day" min="1" max="31" placeholder="DD" required>
+         
           </div>
           <div class="form-group">
             <label for="month">MONTH</label><br>
             <input type="number" id="month" min="1" max="12" placeholder="MM" required>
+          
           </div>
           <div class="form-group">
             <label for="year">YEAR</label><br>
             <input type="number" id="year" min="1900" max="2099" placeholder="YYYY" required>
+           
           </div>
+          <div id="error" class="error-message"></div>
+        </div>
+          <br>
+        
+          <hr>
+          <button type="submit">Calculate Age</button>
+          
         </form>
-        <br>
-        <button type="submit">Calculate Age</button>
-        <hr>
+    
+       
         <div id="result">
-<h1><span>--</span>years</h1>
-<h1><span>--</span>months</h1>
-<h1><span>--</span>days</h1>
+
+
+
+<div class="result-value">
+    <h1 class="result-label"><span id="years">- -</span>years</h1>
+  </div>
+  <div class="result-value">
+    <h1 class="result-label"><span id="months">- -</span>months</h1>
+  </div>
+  <div class="result-value">
+    <h1 class="result-label"><span id="days">- -</span>days</h1>
+  </div>
+  
         </div>
       </div>
  
-      
+          
 </body>
 </html>

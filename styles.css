@@ -41,6 +41,8 @@ body{
     cursor: pointer;
     width: 100px;
     height: 30px;
+    font-weight:600;
+    font-size: 30px;
   }
   
   input::placeholder {
@@ -61,10 +63,20 @@ body{
     border-radius: 4px;
     cursor: pointer;
   }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
   
   #result {
     font-size: 34px;
     font-weight: bold;
     margin-top: 20px;
   }
-  
+  .result-label {
+    font-weight: bold;
+  }
+  .result-value {
+    margin-bottom: 10px;
+  }
